@@ -48,7 +48,9 @@
         <p>This page hosts the existing Soy Sauce Survey through Typeform. Taking
           the survey is optional. Answers are sent to Typeform and the survey
           operator; please do not include sensitive personal information.</p>
-        <p>This page adds no PostHog, Datafast or session-recording code.
+        <p>This page uses OpenPanel to measure visits to the public page, without
+          recording query strings or fragments. It respects Global Privacy Control
+          and Do Not Track. This page adds no PostHog, Datafast or session-recording code.
           Typeform's embedded service has its own data handling, cookies and
           measurement. Read its <a href="https://www.typeform.com/legal/privacy-policy">privacy policy</a>
           and <a href="https://www.typeform.com/legal/service-terms-and-conditions">service terms</a>
@@ -60,5 +62,6 @@
       <noscript><p>The embedded survey needs JavaScript to load.</p></noscript>
     </footer>
     <script src="//embed.typeform.com/next/embed.js"></script>
+    <script src="/openpanel.js" defer></script>
   </body>
 </html>
